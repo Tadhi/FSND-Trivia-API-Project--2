@@ -95,7 +95,7 @@ flask run
 - Setting the FLASK_APP variable to flaskr directs flask to use the flaskr directory and the __init__.py file to find the application.
 
 
-### API documentation
+## API Documentation
 - API Reference:
 
 Getting Started:
@@ -382,10 +382,14 @@ curl http://127.0.0.1:5000/quizzes -X POST -H "Content-Type: application/json" -
 
 ### Testing
 To run the tests, you have to run:
-
+```
 createdb trivia_test
 psql trivia_test < trivia.psql
 python test_flaskr.py
+```
+* In order to perform the test process, it is necessary to create new data for the test.
+* link the data in the project folder (trivia.psql).
+* Run the test test_flaskr.py
 
 ### Authors:
 Your Student, Tadhi Ibrahim.
