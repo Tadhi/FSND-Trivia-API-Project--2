@@ -135,7 +135,7 @@ curl -X DELETE http://127.0.0.1:5000/questions/20000
 ```
 
 ### Endpoints:
-## 1- POST /questions with search term included in request:
+#### 1- POST /questions with search term included in request:
 
 curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json" -d '{"searchTerm": "Van Gogh"}'
 ```
