@@ -1,4 +1,4 @@
-# Full Stack Trivia API Project - Udacity
+# Full Stack Developer Project 2 - Trivia API - Udacity
 
 > This project was completed as part of the course requirements of Udacity's Full Stack Nanodegree certification. 
 
