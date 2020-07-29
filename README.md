@@ -3,7 +3,7 @@
 > This project was completed as part of the course requirements of Udacity's Full Stack Nanodegree certification. 
 
 ### Intro
-A webpage created to manage the Trivia  app to play a game that contain trivai questions to test users knowledgeability. In addtion, users can search about questions based on text,
+> A webpage created to manage the Trivia  app to play a game that contain trivai questions to test users knowledgeability. In addtion, users can search about questions based on text,
 add questions with categories and difficulty levels, and see a list of questions based on categories.
 
 
