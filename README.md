@@ -49,9 +49,9 @@ It's recommended to worke within a virtual environment whenever using Python for
 
 Frontend Dependencies:
 This project uses NPM to manage software dependencies. NPM Relies on the package.json file. It's located in the frontend directory of this repository. After cloning, I open my terminal and run:
-
+  ```
 npm install
-
+  ```
 Backend Dependencies:
 PIP Dependencies:
 Once I have your virtual environment setup and running. I install dependencies by naviging to the /backend directory and running:
