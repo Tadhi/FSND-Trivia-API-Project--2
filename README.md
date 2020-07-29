@@ -97,33 +97,41 @@ flask run
 
 ## API Documentation
 > API Reference
-## Getting Started:
+## Getting Started
 - URL: Currently this application is only hosted locally. The backend is hosted at http://127.0.0.1:5000/
 
-## Errors Handling are returned as JSON in the following format:
-1- curl http://127.0.0.1:5000/categories/200/questions
+### Errors Handling are returned as JSON in the following format:
+1- Bad Request - 400
+curl http://127.0.0.1:5000/categories/200/questions
+```
 {
   "error": 400, 
   "message": "Bad Request", 
   "success": false
 }
+```
 
-2- curl http://127.0.0.1:5000/categories/200
+2- Resource Not Found - 404
+curl http://127.0.0.1:5000/categories/200
+```
 {
   "error": 404, 
   "message": "Resource Not Found", 
   "success": false
 }
+```
 
-3- curl -X DELETE http://127.0.0.1:5000/questions/20000
+3- Unprocessable - 422
+curl -X DELETE http://127.0.0.1:5000/questions/20000
+```
 {
   "error": 422, 
   "message": "Unprocessable", 
   "success": false
 }
+```
 
-
-## Endpoints:
+### Endpoints:
 1- POST /questions with search term included in request:
 curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json" -d '{"searchTerm": "Van Gogh"}'
 {
