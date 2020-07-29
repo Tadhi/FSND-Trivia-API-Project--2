@@ -9,7 +9,7 @@ add questions with categories and difficulty levels, and see a list of questions
 
 
 ### Project task
-- The task for the project was to create an API and test suite for implementing the following functionality:
+To create an API and test suite for implementing the following functionality:
 
 1) Display questions
 both all questions and by category. Questions should show the question, category and difficulty rating by default and can show/hide the answer.
