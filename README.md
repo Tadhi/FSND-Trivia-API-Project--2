@@ -96,12 +96,34 @@ flask run
 
 
 ## API Documentation
-- API Reference:
-
-Getting Started:
+> API Reference
+## Getting Started:
 - URL: Currently this application is only hosted locally. The backend is hosted at http://127.0.0.1:5000/
 
-- Endpoints:
+## Errors Handling are returned as JSON in the following format:
+1- curl http://127.0.0.1:5000/categories/200/questions
+{
+  "error": 400, 
+  "message": "Bad Request", 
+  "success": false
+}
+
+2- curl http://127.0.0.1:5000/categories/200
+{
+  "error": 404, 
+  "message": "Resource Not Found", 
+  "success": false
+}
+
+3- curl -X DELETE http://127.0.0.1:5000/questions/20000
+{
+  "error": 422, 
+  "message": "Unprocessable", 
+  "success": false
+}
+
+
+## Endpoints:
 1- POST /questions with search term included in request:
 curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json" -d '{"searchTerm": "Van Gogh"}'
 {
@@ -356,28 +378,6 @@ curl http://127.0.0.1:5000/quizzes -X POST -H "Content-Type: application/json" -
   "success": true
 }
 
-
-- Errors Handling are returned as JSON in the following format:
-1- curl http://127.0.0.1:5000/categories/200/questions
-{
-  "error": 400, 
-  "message": "Bad Request", 
-  "success": false
-}
-
-2- curl http://127.0.0.1:5000/categories/200
-{
-  "error": 404, 
-  "message": "Resource Not Found", 
-  "success": false
-}
-
-3- curl -X DELETE http://127.0.0.1:5000/questions/20000
-{
-  "error": 422, 
-  "message": "Unprocessable", 
-  "success": false
-}
 
 
 ### Testing
