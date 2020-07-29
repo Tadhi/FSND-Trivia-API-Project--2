@@ -25,7 +25,7 @@ both all questions and by category. Questions should show the question, category
 ## Objective
 Completing this trivia app project will give me the ability to structure plan, implement, and test an API skills essential for enabling my future applications to communicate with others.  
 
-## About the Stack:
+## About the Stack
 
 ### Backend
 
@@ -47,12 +47,12 @@ Virtual Enviornment:
 It's recommended to worke within a virtual environment whenever using Python for projects. This keeps the dependencies for each project separate and organaized.
 
 
-### Frontend Dependencies:
+### Frontend Dependencies
 This project uses NPM to manage software dependencies. NPM Relies on the package.json file. It's located in the frontend directory of this repository. After cloning, I open my terminal and run:
   ```
 npm install
   ```
-### Backend Dependencies:
+### Backend Dependencies
 PIP Dependencies:
 Once I have your virtual environment setup and running. I install dependencies by naviging to the /backend directory and running:
 ```
@@ -60,7 +60,7 @@ pip install -r requirements.txt
 ```
 This will install all of the required packages that selected within the requirements.txt file.
 
-Key Dependencies:
+### Key Dependencies:
 
 A- Flask is a lightweight backend microservices framework. Flask is required to handle requests and responses.
 
