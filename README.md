@@ -154,7 +154,7 @@ curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json"
 }
 ```
 
-## 2-POST /questions with no search term included in request:
+#### 2-POST /questions with no search term included in request:
 
 curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json" -d '{ "question": "How many paintings did Van Gogh sell in his lifetime?", "answer": "One", "difficulty": 4, "category": "2" }'
 ```
@@ -238,7 +238,7 @@ curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json"
 }
 ```
 
-## 3- DELETE /questions/<int:id>
+#### 3- DELETE /questions/<int:id>
 
  curl http://127.0.0.1:5000/questions/17 -X DELETE
  ```
@@ -248,7 +248,7 @@ curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json"
 }
 ```
 
-## 4- GET /questions:
+#### 4- GET /questions:
 
 curl http://127.0.0.1:5000/questions
 ```
@@ -338,7 +338,7 @@ curl http://127.0.0.1:5000/questions
 }
 ```
 
-## 5- GET /categories/<int:id>/questions:
+#### 5- GET /categories/<int:id>/questions:
 
  curl http://127.0.0.1:5000/categories/1/questions
  ```
@@ -372,7 +372,7 @@ curl http://127.0.0.1:5000/questions
 }
 ```
 
-## 6- POST /quizzes:
+#### 6- POST /quizzes:
 
 curl http://127.0.0.1:5000/quizzes -X POST -H "Content-Type: application/json" -d '{"previous_questions": [20, 21], "quiz_category": {"type": "Art", "id": "3"}}'
 ```
@@ -388,7 +388,7 @@ curl http://127.0.0.1:5000/quizzes -X POST -H "Content-Type: application/json" -
 }
 ```
 
-## 7- GET /categories:
+#### 7- GET /categories:
 
  curl http://127.0.0.1:5000/categories
  ```
