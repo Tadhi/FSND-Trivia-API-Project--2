@@ -113,6 +113,7 @@ curl http://127.0.0.1:5000/categories/200/questions
 ```
 
 2- Resource Not Found - 404
+
 curl http://127.0.0.1:5000/categories/200
 ```
 {
@@ -123,6 +124,7 @@ curl http://127.0.0.1:5000/categories/200
 ```
 
 3- Unprocessable - 422
+
 curl -X DELETE http://127.0.0.1:5000/questions/20000
 ```
 {
@@ -134,7 +136,9 @@ curl -X DELETE http://127.0.0.1:5000/questions/20000
 
 ### Endpoints:
 1- POST /questions with search term included in request:
+
 curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json" -d '{"searchTerm": "Van Gogh"}'
+```
 {
   "questions": [
     {
@@ -148,9 +152,12 @@ curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json"
   "success": true, 
   "total_questions": 20
 }
+```
 
 2-POST /questions with no search term included in request:
+
 curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json" -d '{ "question": "How many paintings did Van Gogh sell in his lifetime?", "answer": "One", "difficulty": 4, "category": "2" }'
+```
 {
   "created": 78, 
   "question_created": "How many paintings did Van Gogh sell in his lifetime?", 
@@ -229,18 +236,22 @@ curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json"
   "success": true, 
   "total_questions": 23
 }
-
+```
 
 3- DELETE /questions/<int:id>
+
  curl http://127.0.0.1:5000/questions/17 -X DELETE
+ ```
 {
   "deleted": 17, 
   "success": true
 }
-
+```
 
 4- GET /questions:
+
 curl http://127.0.0.1:5000/questions
+```
 {
   "categories": {
     "1": "Science", 
@@ -325,10 +336,12 @@ curl http://127.0.0.1:5000/questions
   "success": true, 
   "total_questions": 21
 }
-
+```
 
 5- GET /categories/<int:id>/questions:
+
  curl http://127.0.0.1:5000/categories/1/questions
+ ```
 {
   "current_category": "Science", 
   "questions": [
@@ -357,10 +370,12 @@ curl http://127.0.0.1:5000/questions
   "success": true, 
   "total_questions": 21
 }
+```
 
+## 6- POST /quizzes:
 
-6- POST /quizzes:
 curl http://127.0.0.1:5000/quizzes -X POST -H "Content-Type: application/json" -d '{"previous_questions": [20, 21], "quiz_category": {"type": "Art", "id": "3"}}'
+```
 {
   "question": {
     "answer": "The Palace of Versailles", 
@@ -371,10 +386,12 @@ curl http://127.0.0.1:5000/quizzes -X POST -H "Content-Type: application/json" -
   }, 
   "success": true
 }
+```
 
+## 7- GET /categories:
 
-7- GET /categories:
  curl http://127.0.0.1:5000/categories
+ ```
 {
   "categories": {
     "1": "Science", 
@@ -386,6 +403,7 @@ curl http://127.0.0.1:5000/quizzes -X POST -H "Content-Type: application/json" -
   }, 
   "success": true
 }
+```
 
 
 
