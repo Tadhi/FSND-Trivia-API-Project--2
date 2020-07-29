@@ -102,6 +102,7 @@ flask run
 
 ### Errors Handling are returned as JSON in the following format:
 1- Bad Request - 400
+
 curl http://127.0.0.1:5000/categories/200/questions
 ```
 {
