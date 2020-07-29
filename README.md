@@ -35,9 +35,9 @@ The `./backend` directory contains a partially completed Flask and SQLAlchemy se
 
 The `./frontend` directory contains a complete React frontend to consume the data from the Flask server. I need to update the endpoints after define them in the backend. 
 
-## Getting Started
+# Getting Started
 
-# Installing Dependencies
+## Installing Dependencies
 
 Python 3.7:
 Developers using this project should already have Python3, pip, node, and npm installed.
@@ -55,9 +55,9 @@ npm install
 Backend Dependencies:
 PIP Dependencies:
 Once I have your virtual environment setup and running. I install dependencies by naviging to the /backend directory and running:
-
+```
 pip install -r requirements.txt
-
+```
 This will install all of the required packages that selected within the requirements.txt file.
 
 Key Dependencies:
