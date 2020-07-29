@@ -75,11 +75,12 @@ psql trivia < trivia.psql
 ```
 ## Running the Frontend in Dev Mode
 The frontend app was built using create-react-app. In order to run the app in development mode I use npm start. 
-
-after that I open http://localhost:3000 to view it in the browser. The page will reload if I make edits on it.
 ```
 npm start
 ```
+after that I open http://localhost:3000 to view it in the browser. The page will reload if I make edits on it.
+
+
 ### Running the Server
 When using the backend directory I have first to ensure that I working on my created virtual enviroment.
 
