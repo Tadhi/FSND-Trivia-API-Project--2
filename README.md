@@ -60,7 +60,7 @@ pip install -r requirements.txt
 ```
 This will install all of the required packages that selected within the requirements.txt file.
 
-### Key Dependencies:
+### Key Dependencies
 
 A- Flask is a lightweight backend microservices framework. Flask is required to handle requests and responses.
 
@@ -68,27 +68,27 @@ B- SQLAlchemy is the Python SQL toolkit and ORM we'll use handle the lightweight
 
 C- Flask-CORS is the extension we'll use to handle cross origin requests from our frontend server.
 
-### Database Setup
+## Database Setup
 With Postgres running, restore a database using the trivia.psql file provided. From the backend folder in terminal run:
 
 psql trivia < trivia.psql
 
-### Running the Frontend in Dev Mode
+## Running the Frontend in Dev Mode
 The frontend app was built using create-react-app. In order to run the app in development mode I use npm start. 
 
 after that I open http://localhost:3000 to view it in the browser. The page will reload if I make edits on it.
-
+```
 npm start
-
+```
 ### Running the Server
 When using the backend directory I have first to ensure that I working on my created virtual enviroment.
 
 - To run the server, execute:
-
+```
 export FLASK_APP=flaskr
 export FLASK_ENV=development
 flask run
-
+```
 - Setting the FLASK_ENV variable to development will detect file changes and restart the server automatically.
 
 - Setting the FLASK_APP variable to flaskr directs flask to use the flaskr directory and the __init__.py file to find the application.
