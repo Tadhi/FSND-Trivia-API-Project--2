@@ -22,7 +22,7 @@ both all questions and by category. Questions should show the question, category
 
 5) Play the quiz game, randomizing either all questions or within a specific category. 
 
-### Objective:
+### Objective
 Completing this trivia app project will give me the ability to structure plan, implement, and test an API skills essential for enabling my future applications to communicate with others.  
 
 ## About the Stack:
